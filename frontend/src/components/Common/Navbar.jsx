@@ -97,7 +97,7 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="absolute top-14 left-0 right-0 z-40 bg-richblack-800 p-4 md:hidden ">
+        <div className="absolute top-14 left-0 right-0 z-40 bg-[#241a10] p-4 md:hidden ">
           <button className="absolute top-4 right-8 z-50" onClick={toggleOpen}>
 
           </button>
