@@ -1,0 +1,26 @@
+export default function Tab({ tabData, field, setField }) {
+  console.log("Tab Data:", tabData);
+  console.log("Current Field:", field);
+  return (
+    <div
+      style={{
+        boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
+      }}
+      className="flex bg-[#241a10] p-1 gap-x-1 my-6 rounded-full max-w-max"
+    >
+      {tabData.map((tab) => (
+        <button
+          key={tab.id}
+          onClick={() => setField(tab.type)}
+          className={`${
+            field === tab.type
+              ? "bg-[#40362d] text-[#fff]"
+              : "bg-transparent text-richblack-200"
+          } py-2 px-5 rounded-full transition-all duration-200`}
+        >
+          {tab?.tabName}
+        </button>
+      ))}
+    </div>
+  );
+}
