@@ -4,7 +4,7 @@ const app = express();
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
 const database = require("./config/database");
-const cookieParser = require("cookie-parser");
+const {cloudinaryConnect}=require("./config/cloudinary");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 4000;
 
 // Connect to the database
 database.connect();
+cloudinaryConnect();
 
 // Middlewares
 app.use(express.json());

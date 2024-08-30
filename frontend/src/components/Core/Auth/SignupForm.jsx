@@ -81,7 +81,7 @@ function SignupForm() {
       type: ACCOUNT_TYPE.INSTRUCTOR,
     },
     {
-      id: 2,
+      id: 3,
       tabName: "Mentor",
       type: ACCOUNT_TYPE.MENTOR,
     },

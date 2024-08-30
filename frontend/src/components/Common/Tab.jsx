@@ -1,6 +1,5 @@
 export default function Tab({ tabData, field, setField }) {
-  console.log("Tab Data:", tabData);
-  console.log("Current Field:", field);
+ 
   return (
     <div
       style={{
