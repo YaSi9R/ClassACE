@@ -23,7 +23,7 @@ import OpenRoute from "./components/Core/Auth/OpenRoute"
 import PrivateRoute from "./components/Core/Auth/PrivateRoute"
 import MyProfile from "./components/Core/Dashboard/MyProfile"
 import Dashboard from "./pages/Dashboard"
-import Instructor from "./components/Core/Dashboard/Instructor"
+import Instructor from "./components/Core/Dashboard/Instructor/Instructor"
 
 function App() {
   const dispatch = useDispatch()
@@ -86,7 +86,7 @@ function App() {
           <Route path="dashboard/my-profile" element={<MyProfile />} />
 
           {/* Route only for Teacher */}
-          {user?.accountType === ACCOUNT_TYPE.TEACHER && (
+          {user?.accountType === ACCOUNT_TYPE.INSTRUCTOR && (
             <>
               <Route path="dashboard/instructor" element={<Instructor />} />
               

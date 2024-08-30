@@ -48,7 +48,12 @@ export default function Sidebar() {
               );
             })}
           </div>
-          <div className="mx-auto mt-6 mb-6 h-[1px] w-10/12 bg-richblack-700" />
+          <div className="mx-auto mt-6 mb-6 h-[1px] w-10/12 bg-[#fff]" />
+
+
+
+
+          {/* Setting and logout options */}
           <div className="flex flex-col">
             <SidebarLink
               link={{ name: "Settings", path: "/dashboard/settings" }}
