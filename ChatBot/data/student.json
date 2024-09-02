@@ -1,0 +1,1025 @@
+{
+    "student": [
+      {
+        "tag": "general_information",
+        "patterns": [
+          "What are the school hours?",
+          "Where is the school located?",
+          "What is the school's contact number?",
+          "Can you tell me about the school facilities?",
+          "What is the school's mission statement?",
+          "Where can I find the school calendar?"
+        ],
+        "responses": [
+          "The school hours are from 8:00 AM to 3:00 PM.",
+          "The school is located at [SCHOOL_ADDRESS].",
+          "You can contact the school at [SCHOOL_PHONE_NUMBER].",
+          "The school offers various facilities including a library, sports complex, and science labs.",
+          "Our mission is to provide quality education and holistic development to students.",
+          "You can find the school calendar on our website at [SCHOOL_CALENDAR_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "admissions",
+        "patterns": [
+          "How can I apply for admission?",
+          "What are the admission requirements?",
+          "When is the admission deadline?",
+          "Is there an entrance exam for admission?",
+          "Where can I find the admission form?",
+          "Can I apply online for admission?"
+        ],
+        "responses": [
+          "You can apply for admission by visiting the admissions section on our website: [ADMISSIONS_LINK].",
+          "Admission requirements include a completed application form, previous school records, and an entrance exam if applicable.",
+          "The admission deadline is [ADMISSION_DEADLINE].",
+          "Yes, there is an entrance exam for admission to [GRADE/CLASS].",
+          "The admission form can be downloaded from [ADMISSION_FORM_LINK].",
+          "Yes, you can apply online through our admissions portal: [ADMISSIONS_PORTAL_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "academics",
+        "patterns": [
+          "What subjects are offered?",
+          "What is the curriculum for [GRADE/CLASS]?",
+          "Who are the subject teachers for [GRADE/CLASS]?",
+          "Where can I find the syllabus?",
+          "Are there any extracurricular activities?",
+          "What is the grading system?"
+        ],
+        "responses": [
+          "We offer subjects such as Mathematics, Science, English, and Social Studies.",
+          "The curriculum for [GRADE/CLASS] includes [CURRICULUM_DETAILS].",
+          "The subject teachers for [GRADE/CLASS] are [TEACHER_NAMES].",
+          "The syllabus can be found on our website at [SYLLABUS_LINK].",
+          "Yes, we offer various extracurricular activities including sports, music, and arts.",
+          "The grading system is based on [GRADING_SYSTEM_DETAILS]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "parent_activities",
+        "patterns": [
+          "What activities can parents participate in?",
+          "Parent involvement",
+          "Events for parents",
+          "Parent meetings",
+          "Parental activities",
+          "Parent events",
+          "What can parents do at school?",
+          "Parent participation",
+          "School events for parents",
+          "Parent-teacher events"
+        ],
+        "responses": [
+          "Parents can participate in various events and meetings. For more details, visit <a target=\"_blank\" href=\"[PARENT ACTIVITIES LINK]\">here</a>",
+          "Check out the activities for parents at <a target=\"_blank\" href=\"[PARENT ACTIVITIES LINK]\">this link</a>",
+          "Find more about parental involvement <a target=\"_blank\" href=\"[PARENT ACTIVITIES LINK]\">here</a>"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "library",
+        "patterns": [
+          "What are the library hours?",
+          "Library schedule",
+          "Library facilities",
+          "How to access the library?",
+          "Library details",
+          "Opening hours of the library",
+          "Library resources",
+          "Library services",
+          "When is the library open?",
+          "What can I find in the library?"
+        ],
+        "responses": [
+          "The library is open from 9 AM to 5 PM. For more details, visit <a target=\"_blank\" href=\"[LIBRARY DETAILS LINK]\">here</a>",
+          "Check out the library facilities and hours at <a target=\"_blank\" href=\"[LIBRARY DETAILS LINK]\">this link</a>",
+          "Find more about the library services at <a target=\"_blank\" href=\"[LIBRARY DETAILS LINK]\">here</a>"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "transportation",
+        "patterns": [
+          "Does the school provide transportation?",
+          "What are the routes for school buses?",
+          "How can I apply for a school bus pass?",
+          "Are there any additional fees for transportation?",
+          "Where can I find the bus schedule?",
+          "Can I track the school bus?"
+        ],
+        "responses": [
+          "Yes, the school provides transportation services.",
+          "The school bus routes are available on our website at [BUS_ROUTES_LINK].",
+          "You can apply for a school bus pass through [BUS_PASS_APPLICATION_LINK].",
+          "There is an additional fee for transportation, which is detailed at [TRANSPORTATION_FEES_LINK].",
+          "The bus schedule can be found on our website at [BUS_SCHEDULE_LINK].",
+          "Yes, you can track the school bus using our tracking app: [BUS_TRACKING_APP_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "health_safety",
+        "patterns": [
+          "What health services are available at school?",
+          "What are the school's safety protocols?",
+          "How does the school handle medical emergencies?",
+          "Are there any health screenings?",
+          "Where can I find the health policy?",
+          "What should I do if my child is sick?"
+        ],
+        "responses": [
+          "The school provides basic health services and has a nurse on-site.",
+          "Our safety protocols include regular drills, security personnel, and emergency plans.",
+          "In case of medical emergencies, our staff is trained to provide first aid and contact emergency services.",
+          "We conduct annual health screenings and vaccinations.",
+          "The health policy can be reviewed on our website at [HEALTH_POLICY_LINK].",
+          "If your child is sick, please inform the school office and provide a medical certificate upon their return."
+        ],
+        "context_set": ""
+      },   
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "How are you?",
+          "Is anyone there?",
+          "Good day",
+          "What’s up?",
+          "How’s it going?",
+          "Hello there!",
+          "Hey there!",
+          "Hi there",
+          "Hello!"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there! What can I do for you?",
+          "Greetings! How can I help you?",
+          "Hey! How’s it going?",
+          "Hello! What can I assist you with?"
+        ],
+        "context_set": ""
+      },
+      {
+       "tag": "greeting",
+       "patterns": [
+         "Hi",
+         "Hello",
+         "Hey",
+         "How are you?",
+         "Is anyone there?",
+         "Good day",
+         "What’s up?",
+         "How’s it going?",
+         "Hello there!",
+         "Hey there!",
+         "Hi there",
+         "Hello!"
+       ],
+       "responses": [
+         "Hello! How can I assist you today?",
+         "Hi there! What can I do for you?",
+         "Greetings! How can I help you?",
+         "Hey! How’s it going?",
+         "Hello! What can I assist you with?"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "goodbye",
+       "patterns": [
+         "Bye",
+         "Goodbye",
+         "See you later",
+         "Cya",
+         "I’m leaving",
+         "Talk to you later",
+         "Farewell",
+         "See ya",
+         "Catch you later",
+         "I have to go",
+         "Later"
+       ],
+       "responses": [
+         "Goodbye! Have a great day!",
+         "See you later! Take care!",
+         "Bye! Feel free to return anytime!",
+         "Farewell! Have a wonderful day!",
+         "Catch you later! Bye for now!"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "creator",
+       "patterns": [
+         "Who created this bot?",
+         "Who made you?",
+         "Who developed you?",
+         "Who is behind this chatbot?",
+         "Who designed you?",
+         "Who made this chatbot?",
+         "Who built you?",
+         "Creator of this bot?"
+       ],
+       "responses": [
+         "This chatbot was developed by a dedicated team .",
+         "Our chatbot was created by skilled professionals in AI.",
+         "The chatbot was built by a group of experts in software development."
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "name",
+       "patterns": [
+         "What’s your name?",
+         "Do you have a name?",
+         "What should I call you?",
+         "What are you called?",
+         "Who are you?",
+         "What is your name?",
+         "What are you?",
+         "Name?",
+         "What’s your name?",
+         "Who am I chatting with?"
+       ],
+       "responses": [
+         "You can call me Chatbot.",
+         "I'm known as Chatbot.",
+         "I am a virtual assistant.",
+         "My name is Chatbot, how can I help you?"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "hours",
+       "patterns": [
+         "What are the school hours?",
+         "When does school start?",
+         "When is school open?",
+         "What are the timings of the school?",
+         "School opening hours?",
+         "What time does school end?",
+         "School schedule",
+         "School timings",
+         "When does school begin?",
+         "When does school close?"
+       ],
+       "responses": [
+         "School is open from 8am to 3pm, Monday to Friday.",
+         "The school operates from 8 AM to 3 PM.",
+         "Our school hours are from 8:00 AM to 3:00 PM."
+       ],
+       "context_set": ""
+     },
+      {
+        "tag": "attendance_report",
+        "patterns": [
+          "Show me the attendance report for {student_name}.",
+          "How is the attendance of {student_name}?",
+          "Can I get the attendance details of {student_name}?",
+          "What is the attendance status of {student_name}?",
+          "Get attendance report for {student_name}.",
+          "Show attendance for {student_name}.",
+          "Give me the attendance report for {student_name}."
+        ],
+        "responses": [
+          "Here is the attendance report for {student_name}:\n\nStudent ID: {student_id}\nClass: {class_name}\n\nAttendance Records:\n{attendance_records}\n\nSummary:\nTotal Days: {total_days}\nTotal Present: {total_present}\nTotal Absent: {total_absent}\nAttendance Percentage: {attendance_percentage}%",
+          "Attendance details for {student_name}:\n\nStudent ID: {student_id}\nClass: {class_name}\n\nAttendance Summary:\nPresent: {total_present} days\nAbsent: {total_absent} days\nAttendance Percentage: {attendance_percentage}%\n\nDetailed Records:\n{attendance_records}"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "check_attendance",
+        "patterns": [
+          "Did {student_name} attend classes on {date}?",
+          "Was {student_name} present on {date}?",
+          "Check if {student_name} was present on {date}.",
+          "Was {student_name} absent on {date}?",
+          "Is there an attendance record for {student_name} on {date}?"
+        ],
+        "responses": [
+          "{student_name} was {status} on {date}.",
+          "On {date}, {student_name} was marked as {status}.",
+          "{student_name}'s attendance on {date} is recorded as {status}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "attendance_summary",
+        "patterns": [
+          "What is the attendance summary for {student_name}?",
+          "Show me the summary of {student_name}'s attendance.",
+          "Give me the attendance percentage for {student_name}.",
+          "How many days did {student_name} attend?",
+          "What is the total attendance percentage for {student_name}?"
+        ],
+        "responses": [
+          "Attendance summary for {student_name}:\n\nTotal Days: {total_days}\nTotal Present: {total_present}\nTotal Absent: {total_absent}\nAttendance Percentage: {attendance_percentage}%",
+          "{student_name}'s attendance summary:\n\nPresent: {total_present} days\nAbsent: {total_absent} days\nAttendance Percentage: {attendance_percentage}%",
+          "{student_name} has attended {total_present} out of {total_days} days. Attendance Percentage: {attendance_percentage}%"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "attendance_trend",
+        "patterns": [
+          "What is the attendance trend for {student_name} this month?",
+          "Show me the attendance trend for {student_name}.",
+          "How has {student_name}'s attendance been over the past month?",
+          "Can I see the attendance pattern for {student_name}?",
+          "Give me the monthly attendance trend for {student_name}."
+        ],
+        "responses": [
+          "{student_name}'s attendance trend for this month:\n\nTotal Days: {total_days}\nTotal Present: {total_present}\nTotal Absent: {total_absent}\nAttendance Percentage: {attendance_percentage}%\n\nDates Present: {present_dates}\nDates Absent: {absent_dates}",
+          "Here is the monthly attendance trend for {student_name}:\n\nPresent on: {present_dates}\nAbsent on: {absent_dates}\nOverall Attendance Percentage: {attendance_percentage}%",
+          "The attendance pattern for {student_name} over the last month shows {total_present} days present and {total_absent} days absent. Attendance Percentage: {attendance_percentage}%."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mentor_info",
+        "patterns": [
+          "Who is my mentor?",
+          "Can you tell me who my mentor is?",
+          "I need information about my mentor.",
+          "Who is assigned as my mentor?",
+          "Who is my academic mentor?",
+          "Give me the details of my mentor."
+        ],
+        "responses": [
+          "Your mentor is {mentor_name}, who specializes in {mentor_specialization}. You can reach them at {mentor_email}.",
+          "You are assigned to {mentor_name}. They specialize in {mentor_specialization} and can be contacted at {mentor_email}.",
+          "Your mentor, {mentor_name}, is available for guidance in {mentor_specialization}. You can contact them at {mentor_email}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "schedule_meeting",
+        "patterns": [
+          "Can I schedule a meeting with my mentor?",
+          "I need to book a meeting with {mentor_name}.",
+          "How do I arrange a meeting with my mentor?",
+          "Help me schedule a session with {mentor_name}.",
+          "I want to set up a meeting with my mentor.",
+          "Can you book a meeting with {mentor_name} for me?"
+        ],
+        "responses": [
+          "You can schedule a meeting with {mentor_name} by using the following link: {meeting_link}. Available slots are on {available_days} from {available_times}.",
+          "To arrange a meeting with {mentor_name}, visit {meeting_link}. Meetings are available on {available_days} from {available_times}.",
+          "{mentor_name} is available for meetings on {available_days} between {available_times}. Use this link to book: {meeting_link}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mentor_feedback",
+        "patterns": [
+          "Can I get feedback from my mentor?",
+          "What feedback has {mentor_name} given me?",
+          "Show me the feedback from {mentor_name}.",
+          "Do I have any feedback from my mentor?",
+          "What is my mentor's feedback on my work?",
+          "Has {mentor_name} left any feedback for me?"
+        ],
+        "responses": [
+          "Here is the latest feedback from {mentor_name}: \"{feedback}\"",
+          "{mentor_name} has provided the following feedback: \"{feedback}\"",
+          "Feedback from {mentor_name}: \"{feedback}\""
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mentor_schedule",
+        "patterns": [
+          "What is {mentor_name}'s schedule?",
+          "When is my mentor available?",
+          "What are the available times to meet {mentor_name}?",
+          "Can you tell me the schedule of {mentor_name}?",
+          "When can I meet with my mentor?",
+          "Give me the schedule for {mentor_name}."
+        ],
+        "responses": [
+          "{mentor_name} is available on {available_days} between {available_times}.",
+          "You can meet with {mentor_name} on {available_days} during {available_times}.",
+          "{mentor_name}'s schedule is as follows: {available_days}, {available_times}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mentor_change",
+        "patterns": [
+          "Can I change my mentor?",
+          "I want to request a new mentor.",
+          "How can I get a different mentor?",
+          "What is the process to change my mentor?",
+          "Help me request a new mentor.",
+          "Can you assist me in changing my mentor?"
+        ],
+        "responses": [
+          "To request a change of mentor, please fill out the mentor change form at {form_link} and provide a reason for your request.",
+          "You can apply for a mentor change by visiting {form_link}. Make sure to explain why you need a new mentor.",
+          "If you wish to change your mentor, please complete the request form here: {form_link}. Your request will be reviewed by the administration."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "classwork",
+        "patterns": [
+          "What is the classwork for today?",
+          "Show me the classwork for {subject}.",
+          "What did we do in {subject} today?",
+          "Give me the classwork for {subject}.",
+          "What classwork was assigned in {subject}?",
+          "Can I see the classwork for {subject}?"
+        ],
+        "responses": [
+          "You can view the classwork for {subject} by visiting the courses tab here: [COURSES_TAB_LINK].",
+          "Classwork details for {subject} are available in the courses tab: [COURSES_TAB_LINK].",
+          "To see today's classwork for {subject}, please check the courses tab: [COURSES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "homework",
+        "patterns": [
+          "What is the homework for today?",
+          "Show me the homework for {subject}.",
+          "What homework was given in {subject}?",
+          "Give me the homework for {subject}.",
+          "What do I need to do for {subject} homework?",
+          "Can I see the homework for {subject}?"
+        ],
+        "responses": [
+          "You can view the homework for {subject} by visiting the courses tab here: [COURSES_TAB_LINK].",
+          "Homework details for {subject} are available in the courses tab: [COURSES_TAB_LINK].",
+          "To see today's homework for {subject}, please check the courses tab: [COURSES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "subject_list",
+        "patterns": [
+          "What subjects do I have?",
+          "Show me the subjects for my class.",
+          "List the subjects for my grade.",
+          "What are the subjects in class {class_name}?",
+          "Can you list the subjects for class {class_name}?",
+          "What subjects are offered in class {class_name}?"
+        ],
+        "responses": [
+          "You can view the list of subjects for class {class_name} in the courses tab here: [COURSES_TAB_LINK].",
+          "Subject details for class {class_name} are available in the courses tab: [COURSES_TAB_LINK].",
+          "To see the subjects for class {class_name}, please visit the courses tab: [COURSES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "subject_details",
+        "patterns": [
+          "Tell me more about {subject}.",
+          "What topics are covered in {subject}?",
+          "Can you give details about {subject} in class {class_name}?",
+          "What is included in {subject} for class {class_name}?",
+          "What do we study in {subject} in class {class_name}?",
+          "Show me the syllabus for {subject} in class {class_name}."
+        ],
+        "responses": [
+          "Detailed information about {subject} for class {class_name} is available in the courses tab here: [COURSES_TAB_LINK].",
+          "You can view the syllabus for {subject} in class {class_name} by visiting the courses tab: [COURSES_TAB_LINK].",
+          "To learn more about {subject} in class {class_name}, check the courses tab: [COURSES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "fee_summary",
+        "patterns": [
+          "What is the total fee for this term?",
+          "Show me the fee details.",
+          "What is the total amount due?",
+          "Give me a summary of my fees.",
+          "How much do I need to pay for this term?",
+          "Can I see the fee summary?"
+        ],
+        "responses": [
+          "The total fee for this term is: {total_fee}.",
+          "Here is the fee summary: {fee_summary}.",
+          "The amount due for this term is: {amount_due}.",
+          "You need to pay {total_fee} for this term."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "paid_amount",
+        "patterns": [
+          "How much have I paid so far?",
+          "Show me my paid amount.",
+          "What is the total amount I have paid?",
+          "Give me the details of my payments.",
+          "Can I see the paid amount for this term?",
+          "What is my current paid amount?"
+        ],
+        "responses": [
+          "You have paid a total of: {paid_amount}.",
+          "The amount you have paid so far is: {paid_amount}.",
+          "Here is the detail of your payments: {payment_details}.",
+          "So far, you have paid {paid_amount}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "due_amount",
+        "patterns": [
+          "What is the remaining amount to be paid?",
+          "Show me the due amount.",
+          "How much do I still owe?",
+          "Give me the details of the outstanding fee.",
+          "Can I see the due amount for this term?",
+          "What is my current due amount?"
+        ],
+        "responses": [
+          "The remaining amount to be paid is: {due_amount}.",
+          "You still owe {due_amount}.",
+          "Here is the outstanding fee: {outstanding_fee}.",
+          "The due amount for this term is: {due_amount}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "payment_history",
+        "patterns": [
+          "What are my payment records?",
+          "Show me the payment history.",
+          "What payments have been made?",
+          "Give me the details of my past payments.",
+          "Can I see my payment history?",
+          "What is the history of my fee payments?"
+        ],
+        "responses": [
+          "Your payment history includes: {payment_records}.",
+          "Here are your past payments: {past_payments}.",
+          "The record of your payments is: {payment_details}.",
+          "You can view your payment history as follows: {payment_records}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "fee_structure",
+        "patterns": [
+          "What is the fee structure for this term?",
+          "Show me the breakdown of my fees.",
+          "Can you provide the fee structure?",
+          "Give me the details of the fee structure for this term.",
+          "What are the components of my fee?",
+          "Can I see the fee breakdown?"
+        ],
+        "responses": [
+          "The fee structure for this term includes: {fee_components}.",
+          "Here is the breakdown of your fees: {fee_breakdown}.",
+          "The components of your fee are: {fee_components}.",
+          "You can view the fee structure with details: {fee_structure_details}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "view_results",
+        "patterns": [
+          "What are my results for this term?",
+          "Show me my exam results.",
+          "Can I see my results?",
+          "Give me my results for this semester.",
+          "How did I perform in my exams?",
+          "Show me my result details."
+        ],
+        "responses": [
+          "You can view your exam results by visiting the results tab here: [RESULTS_TAB_LINK].",
+          "Check the results tab for your exam results: [RESULTS_TAB_LINK].",
+          "Your results for this term are available in the results tab: [RESULTS_TAB_LINK].",
+          "To see your exam results, please refer to the results tab: [RESULTS_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "result_feedback",
+        "patterns": [
+          "What feedback did I receive on my results?",
+          "Show me the feedback on my performance.",
+          "Can I get feedback on my exam results?",
+          "Give me the feedback for my results.",
+          "What comments did I get for my exam?",
+          "Show me my result feedback."
+        ],
+        "responses": [
+          "Feedback on your results is available in the feedback section here: [FEEDBACK_TAB_LINK].",
+          "You can view the feedback on your performance by visiting the feedback tab: [FEEDBACK_TAB_LINK].",
+          "Check the feedback tab for comments on your results: [FEEDBACK_TAB_LINK].",
+          "To see the feedback for your exam results, please refer to the feedback tab: [FEEDBACK_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "subject_results",
+        "patterns": [
+          "What are my results for {subject}?",
+          "Show me the results for {subject}.",
+          "Can I see my performance in {subject}?",
+          "Give me the results for {subject}.",
+          "How did I do in {subject}?",
+          "Show me my grades for {subject}."
+        ],
+        "responses": [
+          "Your results for {subject} are available in the results tab here: [RESULTS_TAB_LINK].",
+          "Check the results tab for your performance in {subject}: [RESULTS_TAB_LINK].",
+          "To see your grades for {subject}, visit the results tab: [RESULTS_TAB_LINK].",
+          "Here are your results for {subject}: [RESULTS_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "exam_performance",
+        "patterns": [
+          "How did I perform in the recent exams?",
+          "Show me my exam performance.",
+          "What is my performance overview?",
+          "Can I get a summary of my exam results?",
+          "Give me an overview of my exam performance.",
+          "Show me a summary of my exam results."
+        ],
+        "responses": [
+          "Your exam performance summary is available in the results tab here: [RESULTS_TAB_LINK].",
+          "Check the results tab for a summary of your exam performance: [RESULTS_TAB_LINK].",
+          "You can view your performance overview by visiting the results tab: [RESULTS_TAB_LINK].",
+          "To get a summary of your exam results, please refer to the results tab: [RESULTS_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "previous_results",
+        "patterns": [
+          "Show me my results from previous terms.",
+          "What were my results last semester?",
+          "Can I see my past exam results?",
+          "Give me a history of my results.",
+          "How did I perform in previous terms?",
+          "Show me my results from last year."
+        ],
+        "responses": [
+          "You can view your results from previous terms in the historical results section here: [HISTORICAL_RESULTS_TAB_LINK].",
+          "Check the historical results tab for your past exam results: [HISTORICAL_RESULTS_TAB_LINK].",
+          "To see your results from previous semesters, visit the historical results tab: [HISTORICAL_RESULTS_TAB_LINK].",
+          "Here is a history of your exam results: [HISTORICAL_RESULTS_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "quiz_points",
+        "patterns": [
+          "How many points did I earn from quizzes?",
+          "Show me my quiz points.",
+          "What are my points for quizzes?",
+          "Give me the details of my quiz points.",
+          "Can I see my quiz points total?",
+          "How many points have I earned from quizzes?"
+        ],
+        "responses": [
+          "You have earned {quiz_points} points from quizzes.",
+          "Your total quiz points are: {quiz_points}.",
+          "Check your quiz points: {quiz_points}.",
+          "You have {quiz_points} points from quizzes."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "assignment_points",
+        "patterns": [
+          "How many points did I get from assignments?",
+          "Show me my assignment points.",
+          "What are my points for assignments?",
+          "Give me the details of my assignment points.",
+          "Can I see my assignment points total?",
+          "How many points have I earned from assignments?"
+        ],
+        "responses": [
+          "You have earned {assignment_points} points from assignments.",
+          "Your total assignment points are: {assignment_points}.",
+          "Check your assignment points: {assignment_points}.",
+          "You have {assignment_points} points from assignments."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "homework_points",
+        "patterns": [
+          "How many points did I earn from homework?",
+          "Show me my homework points.",
+          "What are my points for homework?",
+          "Give me the details of my homework points.",
+          "Can I see my homework points total?",
+          "How many points have I earned from homework?"
+        ],
+        "responses": [
+          "You have earned {homework_points} points from homework.",
+          "Your total homework points are: {homework_points}.",
+          "Check your homework points: {homework_points}.",
+          "You have {homework_points} points from homework."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "total_points",
+        "patterns": [
+          "What is my total points?",
+          "Show me my total points.",
+          "How many points do I have in total?",
+          "Give me the details of my total points.",
+          "Can I see my total points?",
+          "What is my overall points total?"
+        ],
+        "responses": [
+          "Your total points are: {total_points}.",
+          "You have {total_points} points in total.",
+          "Check your total points: {total_points}.",
+          "Your overall points total is: {total_points}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "view_notes",
+        "patterns": [
+          "Can I see my notes?",
+          "Show me my notes.",
+          "What notes do I have?",
+          "Give me access to my notes.",
+          "Show me all my notes.",
+          "Can you display my notes?"
+        ],
+        "responses": [
+          "You can view your notes by visiting the Mynotes tab here: [MYNOTES_TAB_LINK].",
+          "Check the Mynotes tab to see all your notes: [MYNOTES_TAB_LINK].",
+          "Your notes are available in the Mynotes tab: [MYNOTES_TAB_LINK].",
+          "To access your notes, please visit the Mynotes tab: [MYNOTES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "subject_notes",
+        "patterns": [
+          "Show me notes for {subject}.",
+          "What are the notes for {subject}?",
+          "Give me the notes related to {subject}.",
+          "Can I access notes for {subject}?",
+          "Display my notes for {subject}.",
+          "What notes do I have for {subject}?"
+        ],
+        "responses": [
+          "You can view your notes for {subject} in the Mynotes tab here: [MYNOTES_TAB_LINK].",
+          "Check the Mynotes tab for notes on {subject}: [MYNOTES_TAB_LINK].",
+          "Your notes for {subject} are available in the Mynotes tab: [MYNOTES_TAB_LINK].",
+          "To see notes for {subject}, visit the Mynotes tab: [MYNOTES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "topic_notes",
+        "patterns": [
+          "Show me notes on {topic}.",
+          "What are the notes for {topic}?",
+          "Give me the notes related to {topic}.",
+          "Can I access notes for {topic}?",
+          "Display my notes on {topic}.",
+          "What notes do I have for {topic}?"
+        ],
+        "responses": [
+          "You can find notes on {topic} in the Mynotes tab here: [MYNOTES_TAB_LINK].",
+          "Check the Mynotes tab for notes on {topic}: [MYNOTES_TAB_LINK].",
+          "Your notes for {topic} are available in the Mynotes tab: [MYNOTES_TAB_LINK].",
+          "To see notes on {topic}, visit the Mynotes tab: [MYNOTES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "search_notes",
+        "patterns": [
+          "Search my notes for {keyword}.",
+          "Find notes containing {keyword}.",
+          "Show notes with {keyword}.",
+          "Can I search for {keyword} in my notes?",
+          "Find notes related to {keyword}.",
+          "Search for {keyword} in my notes."
+        ],
+        "responses": [
+          "You can search for notes containing {keyword} in the Mynotes tab here: [MYNOTES_TAB_LINK].",
+          "Use the Mynotes tab to search for notes with {keyword}: [MYNOTES_TAB_LINK].",
+          "Search results for {keyword} are available in the Mynotes tab: [MYNOTES_TAB_LINK].",
+          "To find notes related to {keyword}, visit the Mynotes tab: [MYNOTES_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "general_query",
+        "patterns": [
+          "I have a question.",
+          "I want to raise a query.",
+          "Can I ask a question?",
+          "I have an issue to report.",
+          "I need help with something.",
+          "How do I raise a query?"
+        ],
+        "responses": [
+          "You can raise your query by using the Raise Query tab here: [RAISE_QUERY_TAB_LINK].",
+          "To submit your query, visit the Raise Query tab: [RAISE_QUERY_TAB_LINK].",
+          "Please use the Raise Query tab to submit your question or issue: [RAISE_QUERY_TAB_LINK].",
+          "For any questions or issues, go to the Raise Query tab: [RAISE_QUERY_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "academic_query",
+        "patterns": [
+          "I have an academic question.",
+          "Raise a query about my classes.",
+          "Question about my coursework.",
+          "I need help with my studies.",
+          "How do I ask about academic issues?",
+          "Can I query about my academic performance?"
+        ],
+        "responses": [
+          "You can raise an academic query using the Raise Query tab here: [RAISE_QUERY_TAB_LINK].",
+          "For academic questions, visit the Raise Query tab: [RAISE_QUERY_TAB_LINK].",
+          "Submit your academic query through the Raise Query tab: [RAISE_QUERY_TAB_LINK].",
+          "To ask about academic issues, go to the Raise Query tab: [RAISE_QUERY_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "technical_query",
+        "patterns": [
+          "I have a technical issue.",
+          "Raise a query about technical problems.",
+          "Technical support needed.",
+          "I need help with system issues.",
+          "How do I report a technical problem?",
+          "Can I raise a query about system errors?"
+        ],
+        "responses": [
+          "You can raise a technical query using the Raise Query tab here: [RAISE_QUERY_TAB_LINK].",
+          "For technical issues, visit the Raise Query tab: [RAISE_QUERY_TAB_LINK].",
+          "Submit your technical query through the Raise Query tab: [RAISE_QUERY_TAB_LINK].",
+          "To report technical problems, go to the Raise Query tab: [RAISE_QUERY_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "general_feedback",
+        "patterns": [
+          "I want to give feedback.",
+          "How can I provide feedback?",
+          "Give feedback about my experience.",
+          "Submit feedback about the system.",
+          "How do I raise a feedback query?",
+          "Can I leave feedback?"
+        ],
+        "responses": [
+          "You can submit your feedback through the Raise Query tab here: [RAISE_QUERY_TAB_LINK].",
+          "To provide feedback, visit the Raise Query tab: [RAISE_QUERY_TAB_LINK].",
+          "Use the Raise Query tab to leave your feedback: [RAISE_QUERY_TAB_LINK].",
+          "For feedback, please go to the Raise Query tab: [RAISE_QUERY_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "teacher_office_hours",
+        "patterns": [
+          "When are {teacher_name}'s office hours?",
+          "What are the office hours for {teacher_name}?",
+          "Show me the office hours of {teacher_name}.",
+          "Can I get the office hours for {teacher_name}?",
+          "Give me the details of {teacher_name}'s office hours.",
+          "What time can I meet {teacher_name}?"
+        ],
+        "responses": [
+          "{teacher_name}'s office hours are: {teacher_office_hours}.",
+          "You can visit {teacher_name} during office hours: {teacher_office_hours}.",
+          "The office hours for {teacher_name} are: {teacher_office_hours}.",
+          "Check {teacher_name}'s office hours here: {teacher_office_hours}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "teacher_subjects",
+        "patterns": [
+          "Which subjects does {teacher_name} teach?",
+          "What subjects are taught by {teacher_name}?",
+          "Show me the subjects assigned to {teacher_name}.",
+          "Give me details about the subjects {teacher_name} teaches.",
+          "Can I see the list of subjects for {teacher_name}?",
+          "What subjects is {teacher_name} responsible for?"
+        ],
+        "responses": [
+          "{teacher_name} teaches the following subjects: {teacher_subjects}.",
+          "The subjects taught by {teacher_name} are: {teacher_subjects}.",
+          "Here are the subjects that {teacher_name} is responsible for: {teacher_subjects}.",
+          "You can find the subjects assigned to {teacher_name} here: {teacher_subjects}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "teacher_contact",
+        "patterns": [
+          "How can I contact my teacher?",
+          "What is the contact information for {teacher_name}?",
+          "Give me the contact details of {teacher_name}.",
+          "How do I reach {teacher_name}?",
+          "Can I get the contact info for {teacher_name}?",
+          "Show me the contact details for {teacher_name}."
+        ],
+        "responses": [
+          "You can contact {teacher_name} at {teacher_contact_info}.",
+          "The contact information for {teacher_name} is: {teacher_contact_info}.",
+          "You can reach {teacher_name} via {teacher_contact_info}.",
+          "Contact details for {teacher_name}: {teacher_contact_info}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "view_messages",
+        "patterns": [
+          "Show me my messages.",
+          "Can I see my messages?",
+          "What messages do I have?",
+          "Display my messages.",
+          "Give me access to my messages.",
+          "How can I view my messages?"
+        ],
+        "responses": [
+          "You can view your messages by visiting the Message tab here: [MESSAGE_TAB_LINK].",
+          "To see all your messages, go to the Message tab: [MESSAGE_TAB_LINK].",
+          "Check the Message tab for your messages: [MESSAGE_TAB_LINK].",
+          "Your messages are available in the Message tab: [MESSAGE_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "unread_messages",
+        "patterns": [
+          "Do I have any unread messages?",
+          "Show me my unread messages.",
+          "Are there any new messages for me?",
+          "What are my unread messages?",
+          "Can you show me messages I haven't read?",
+          "List my unread messages."
+        ],
+        "responses": [
+          "You can find your unread messages in the Message tab here: [MESSAGE_TAB_LINK].",
+          "Check the Message tab for any unread messages: [MESSAGE_TAB_LINK].",
+          "Your unread messages are available in the Message tab: [MESSAGE_TAB_LINK].",
+          "To see your new messages, visit the Message tab: [MESSAGE_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "message_details",
+        "patterns": [
+          "Tell me more about this message.",
+          "Give me details on this message.",
+          "What is this message about?",
+          "Show me the details of this message.",
+          "I want more information on this message.",
+          "What does this message say?"
+        ],
+        "responses": [
+          "For details about this message, check the Message tab here: [MESSAGE_TAB_LINK].",
+          "You can view the full details of this message in the Message tab: [MESSAGE_TAB_LINK].",
+          "See more information about this message in the Message tab: [MESSAGE_TAB_LINK].",
+          "To get details on this message, visit the Message tab: [MESSAGE_TAB_LINK]."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "message_reply",
+        "patterns": [
+          "How can I reply to a message?",
+          "Can I respond to this message?",
+          "Show me how to reply to a message.",
+          "I want to reply to this message.",
+          "What is the process to reply to a message?",
+          "Give me the steps to respond to a message."
+        ],
+        "responses": [
+          "You can reply to messages through the Message tab here: [MESSAGE_TAB_LINK].",
+          "To respond to a message, visit the Message tab and use the reply feature: [MESSAGE_TAB_LINK].",
+          "Check the Message tab to reply to any messages: [MESSAGE_TAB_LINK].",
+          "To reply to a message, go to the Message tab: [MESSAGE_TAB_LINK]."
+        ],
+        "context_set": ""
+      }
+    ]
+  }
+  
+  
+  
