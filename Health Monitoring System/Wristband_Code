@@ -1,0 +1,54 @@
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+// DS18B20 Setup
+#define ONE_WIRE_BUS 2
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire);
+
+float lastTemperature = 0.0;
+int lastPotentiometerValue = 0;
+
+const int buzzerPin = 3; // Buzzer connected to pin D3
+
+void setup() {
+  Serial.begin(9600);
+  sensors.begin();
+  pinMode(buzzerPin, OUTPUT); // Set buzzer pin as output
+}
+
+void loop() {
+  // Read temperature
+  sensors.requestTemperatures();
+  float temperature = sensors.getTempCByIndex(0);
+
+  // Read potentiometer value (simulating heart rate)
+  int potentiometerValue = analogRead(A0);
+
+  // Map potentiometer value to a range (e.g., 60-120 bpm)
+  int heartRate = map(potentiometerValue, 0, 1023, 60, 120);
+
+  // Check for sudden changes and activate buzzer
+  if (abs(temperature - lastTemperature) > 2.0) { // Change threshold for temperature
+    Serial.print("Sudden change in temperature detected: ");
+    Serial.print(temperature);
+    Serial.println(" C");
+    tone(buzzerPin, 1000); // Sound buzzer at 1000 Hz
+    delay(500); // Buzzer duration
+    noTone(buzzerPin); // Stop buzzer
+  }
+  
+  if (abs(heartRate - lastPotentiometerValue) > 10) { // Change threshold for heart rate
+    Serial.print("Sudden change in heart rate detected: ");
+    Serial.println(heartRate);
+    tone(buzzerPin, 1000); // Sound buzzer at 1000 Hz
+    delay(500); // Buzzer duration
+    noTone(buzzerPin); // Stop buzzer
+  }
+
+  // Update last values
+  lastTemperature = temperature;
+  lastPotentiometerValue = heartRate;
+
+  delay(2000); // Wait for 2 seconds
+}

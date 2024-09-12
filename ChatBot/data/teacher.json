@@ -1,0 +1,828 @@
+{
+    "teacher": [
+      {
+        "tag": "add_resource",
+        "patterns": [
+          "Add {resource_type} for class {class_id}",
+          "Assign new {resource_type} for {class_name}",
+          "Create {resource_type} for {subject_name} in class {class_id}",
+          "Set up {resource_type} for class {class_id}"
+        ],
+        "responses": [
+          "{resource_type} has been added for class {class_id} by {teacher_name}.",
+          "Successfully created {resource_type} for {subject_name} in class {class_id}.",
+          "{teacher_name} has assigned new {resource_type} for {class_name}."
+        ]
+      },
+      {
+        "tag": "view_resource",
+        "patterns": [
+          "Show all {resource_type} for class {class_id}",
+          "View {resource_type} assigned to {class_name}",
+          "Display {resource_type} for {subject_name} in class {class_id}",
+          "List {resource_type} for class {class_id}"
+        ],
+        "responses": [
+          "Here are all the {resource_type} for class {class_id}: {resource_list}.",
+          "Displaying {resource_type} assigned to {class_name}.",
+          "The following {resource_type} have been assigned for {subject_name} in class {class_id}: {resource_list}."
+        ]
+      },
+      {
+        "tag": "update_resource",
+        "patterns": [
+          "Update {resource_type} for class {class_id}",
+          "Modify the {resource_type} for {class_name}",
+          "Change {resource_type} details for {subject_name} in class {class_id}",
+          "Edit {resource_type} for class {class_id}"
+        ],
+        "responses": [
+          "{resource_type} for class {class_id} has been updated by {teacher_name}.",
+          "The {resource_type} details for {subject_name} in class {class_id} have been modified.",
+          "{teacher_name} has successfully edited the {resource_type} for {class_name}."
+        ]
+      },
+      {
+        "tag": "delete_resource",
+        "patterns": [
+          "Remove {resource_type} for class {class_id}",
+          "Delete {resource_type} from {class_name}",
+          "Clear {resource_type} for {subject_name} in class {class_id}",
+          "Erase {resource_type} for class {class_id}"
+        ],
+        "responses": [
+          "{resource_type} for class {class_id} has been removed.",
+          "Successfully deleted {resource_type} from {class_name}.",
+          "{teacher_name} has cleared the {resource_type} for {subject_name} in class {class_id}."
+        ]
+      },
+      {
+        "tag": "list_resources",
+        "patterns": [
+          "List all resources for class {class_id}",
+          "Show all assignments, homework, projects, and classwork for {class_name}",
+          "Display all resources for {subject_name} in class {class_id}",
+          "Get all educational resources for class {class_id}"
+        ],
+        "responses": [
+          "Here are all the resources for class {class_id}: {resource_list}.",
+          "Listing all assignments, homework, projects, and classwork for {class_name}.",
+          "The educational resources for {subject_name} in class {class_id} are: {resource_list}."
+        ]
+      },
+      {
+        "tag": "emergency_alert",
+        "patterns": [
+          "Send an emergency alert to everyone",
+          "Broadcast emergency alert",
+          "Notify all about an emergency",
+          "Alert all users about the emergency"
+        ],
+        "responses": [
+          "Emergency alert has been sent to all mentors, students, teachers, and admin.",
+          "All users have been notified about the emergency.",
+          "An emergency alert has been broadcasted to everyone in the system."
+        ]
+      },
+      {
+        "tag": "emergency_alert_by_role",
+        "patterns": [
+          "Send emergency alert to {role}",
+          "Notify {role} about the emergency",
+          "Alert {role} about the emergency",
+          "Send emergency message to {role}"
+        ],
+        "responses": [
+          "Emergency alert has been sent to {role}.",
+          "{role} have been notified about the emergency.",
+          "An emergency alert has been dispatched to {role}."
+        ]
+      },
+      {
+        "tag": "add_meeting_link",
+        "patterns": [
+          "Add a meeting link for class {class_id}",
+          "Set up an online class link for class {class_id}",
+          "Provide a meeting link for class {class_id}",
+          "Enter the meeting URL for class {class_id}"
+        ],
+        "responses": [
+          "The meeting link for class {class_id} has been added. Here is the link: {meeting_link}.",
+          "Meeting link for class {class_id} has been set up successfully.",
+          "The online class link for class {class_id} is now available: {meeting_link}."
+        ]
+      },
+      {
+        "tag": "view_meeting_link",
+        "patterns": [
+          "Show the meeting link for class {class_id}",
+          "Get the online class link for class {class_id}",
+          "Display the meeting URL for class {class_id}",
+          "Retrieve the meeting link for class {class_id}"
+        ],
+        "responses": [
+          "Here is the meeting link for class {class_id}: {meeting_link}.",
+          "Fetching the meeting link for class {class_id}.",
+          "The online class link for class {class_id} is: {meeting_link}."
+        ]
+      },
+      {
+        "tag": "update_meeting_link",
+        "patterns": [
+          "Update the meeting link for class {class_id}",
+          "Change the online class link for class {class_id}",
+          "Modify the meeting URL for class {class_id}",
+          "Edit the meeting link for class {class_id}"
+        ],
+        "responses": [
+          "The meeting link for class {class_id} has been updated. Here is the new link: {meeting_link}.",
+          "The online class link for class {class_id} has been changed.",
+          "The updated meeting link for class {class_id} is now available: {meeting_link}."
+        ]
+      },
+      {
+        "tag": "delete_meeting_link",
+        "patterns": [
+          "Remove the meeting link for class {class_id}",
+          "Delete the online class link for class {class_id}",
+          "Clear the meeting URL for class {class_id}",
+          "Erase the meeting link for class {class_id}"
+        ],
+        "responses": [
+          "The meeting link for class {class_id} has been removed.",
+          "The online class link for class {class_id} has been deleted.",
+          "The meeting link for class {class_id} has been cleared."
+        ]
+      },
+      {
+        "tag": "list_meeting_links",
+        "patterns": [
+          "List all meeting links for classes",
+          "Show all online class links",
+          "Get all meeting URLs",
+          "Display all meeting links"
+        ],
+        "responses": [
+          "Here are the meeting links for all classes: {class_links}.",
+          "Fetching the list of all meeting links.",
+          "The meeting links for all classes are: {class_links}."
+        ]
+      },
+      {
+        "tag": "feed_marks",
+        "patterns": [
+          "Feed marks for class {class_id}",
+          "Enter marks for students in class {class_id}",
+          "Record marks for class {class_id}",
+          "Update marks for class {class_id}"
+        ],
+        "responses": [
+          "Marks for class {class_id} have been fed successfully.",
+          "The marks have been recorded for students in class {class_id}.",
+          "Successfully entered marks for class {class_id}."
+        ]
+      },
+      {
+        "tag": "view_marks",
+        "patterns": [
+          "Show marks for class {class_id}",
+          "Display student marks for class {class_id}",
+          "Get marks for class {class_id}",
+          "View marks of students in class {class_id}"
+        ],
+        "responses": [
+          "Here are the marks for class {class_id}: {marks_list}.",
+          "Displaying student marks for class {class_id}.",
+          "The marks for class {class_id} are: {marks_list}."
+        ]
+      },
+      {
+        "tag": "update_marks",
+        "patterns": [
+          "Update marks for class {class_id}",
+          "Change student marks for class {class_id}",
+          "Modify marks for class {class_id}",
+          "Edit marks of students in class {class_id}"
+        ],
+        "responses": [
+          "Marks for class {class_id} have been updated.",
+          "The student marks for class {class_id} have been changed.",
+          "Successfully modified the marks for class {class_id}."
+        ]
+      },
+      {
+        "tag": "delete_marks",
+        "patterns": [
+          "Remove marks for class {class_id}",
+          "Delete student marks for class {class_id}",
+          "Clear marks for class {class_id}",
+          "Erase marks of students in class {class_id}"
+        ],
+        "responses": [
+          "Marks for class {class_id} have been removed.",
+          "The student marks for class {class_id} have been deleted.",
+          "Successfully cleared the marks for class {class_id}."
+        ]
+      },
+      {
+        "tag": "list_marks",
+        "patterns": [
+          "List all marks for class {class_id}",
+          "Show marks of students in class {class_id}",
+          "Get all student marks for class {class_id}",
+          "Display marks for class {class_id}"
+        ],
+        "responses": [
+          "Here are the marks for all students in class {class_id}: {marks_list}.",
+          "Fetching the list of all marks for class {class_id}.",
+          "The marks for class {class_id} are: {marks_list}."
+        ]
+      },
+      {
+        "tag": "attendance",
+        "patterns": [
+          "Mark attendance for class {class_id}",
+          "Record attendance for class {class_id}",
+          "Update attendance for class {class_id}",
+          "Enter attendance for students in class {class_id}"
+        ],
+        "responses": [
+          "Attendance for class {class_id} has been recorded.",
+          "Successfully marked attendance for students in class {class_id}.",
+          "Attendance has been updated for class {class_id}."
+        ]
+      },
+      {
+        "tag": "view_attendance",
+        "patterns": [
+          "Show attendance for class {class_id}",
+          "Display attendance record for class {class_id}",
+          "Get attendance for students in class {class_id}",
+          "View attendance for class {class_id}"
+        ],
+        "responses": [
+          "Here is the attendance record for class {class_id}: {attendance_list}.",
+          "Displaying attendance for class {class_id}.",
+          "The attendance for students in class {class_id} is: {attendance_list}."
+        ]
+      },
+      {
+        "tag": "update_attendance",
+        "patterns": [
+          "Update attendance for class {class_id}",
+          "Change attendance record for class {class_id}",
+          "Modify attendance for class {class_id}",
+          "Edit attendance for class {class_id}"
+        ],
+        "responses": [
+          "Attendance for class {class_id} has been updated.",
+          "Successfully changed the attendance record for class {class_id}.",
+          "The attendance for class {class_id} has been modified."
+        ]
+      },
+      {
+        "tag": "delete_attendance",
+        "patterns": [
+          "Remove attendance record for class {class_id}",
+          "Delete attendance for class {class_id}",
+          "Clear attendance for students in class {class_id}",
+          "Erase attendance record for class {class_id}"
+        ],
+        "responses": [
+          "Attendance record for class {class_id} has been removed.",
+          "Successfully deleted the attendance for class {class_id}.",
+          "The attendance for class {class_id} has been cleared."
+        ]
+      },
+      {
+        "tag": "list_attendance",
+        "patterns": [
+          "List all attendance records for class {class_id}",
+          "Show attendance of students in class {class_id}",
+          "Get all attendance data for class {class_id}",
+          "Display attendance records for class {class_id}"
+        ],
+        "responses": [
+          "Here are the attendance records for class {class_id}: {attendance_list}.",
+          "Fetching the list of all attendance records for class {class_id}.",
+          "The attendance for class {class_id} is: {attendance_list}."
+        ]
+      },
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "How are you?",
+          "Is anyone there?",
+          "Good day",
+          "What’s up?",
+          "How’s it going?",
+          "Hello there!",
+          "Hey there!",
+          "Hi there",
+          "Hello!"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there! What can I do for you?",
+          "Greetings! How can I help you?",
+          "Hey! How’s it going?",
+          "Hello! What can I assist you with?"
+        ],
+        "context_set": ""
+      },
+      {
+       "tag": "greeting",
+       "patterns": [
+         "Hi",
+         "Hello",
+         "Hey",
+         "How are you?",
+         "Is anyone there?",
+         "Good day",
+         "What’s up?",
+         "How’s it going?",
+         "Hello there!",
+         "Hey there!",
+         "Hi there",
+         "Hello!"
+       ],
+       "responses": [
+         "Hello! How can I assist you today?",
+         "Hi there! What can I do for you?",
+         "Greetings! How can I help you?",
+         "Hey! How’s it going?",
+         "Hello! What can I assist you with?"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "goodbye",
+       "patterns": [
+         "Bye",
+         "Goodbye",
+         "See you later",
+         "Cya",
+         "I’m leaving",
+         "Talk to you later",
+         "Farewell",
+         "See ya",
+         "Catch you later",
+         "I have to go",
+         "Later"
+       ],
+       "responses": [
+         "Goodbye! Have a great day!",
+         "See you later! Take care!",
+         "Bye! Feel free to return anytime!",
+         "Farewell! Have a wonderful day!",
+         "Catch you later! Bye for now!"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "creator",
+       "patterns": [
+         "Who created this bot?",
+         "Who made you?",
+         "Who developed you?",
+         "Who is behind this chatbot?",
+         "Who designed you?",
+         "Who made this chatbot?",
+         "Who built you?",
+         "Creator of this bot?",
+         "Who is the father of this bot?"
+       ],
+       "responses": [
+         "This chatbot was developed by Shashank and Shantanu.",
+         "Our chatbot was created by Shashank and Shantanu.",
+         "The chatbot was built by a group of experts in software development named Shashank and Shantanu."
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "name",
+       "patterns": [
+         "What’s your name?",
+         "Do you have a name?",
+         "What should I call you?",
+         "What are you called?",
+         "Who are you?",
+         "What is your name?",
+         "What are you?",
+         "Name?",
+         "What’s your name?",
+         "Who am I chatting with?"
+       ],
+       "responses": [
+         "You can call me Chatbot.",
+         "I'm known as Chatbot.",
+         "I am a virtual assistant.",
+         "My name is Chatbot, how can I help you?"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "hours",
+       "patterns": [
+         "What are the school hours?",
+         "When does school start?",
+         "When is school open?",
+         "What are the timings of the school?",
+         "School opening hours?",
+         "What time does school end?",
+         "School schedule",
+         "School timings",
+         "When does school begin?",
+         "When does school close?"
+       ],
+       "responses": [
+         "School is open from 8am to 3pm, Monday to Friday.",
+         "The school operates from 8 AM to 3 PM.",
+         "Our school hours are from 8:00 AM to 3:00 PM."
+       ],
+       "context_set": ""
+     },
+     {
+      "tag": "add_feedback_report",
+      "patterns": [
+        "Add a feedback report for class {class_id}",
+        "Submit feedback for class {class_id}",
+        "Create a feedback report for {class_name}",
+        "Enter feedback for class {class_id}"
+      ],
+      "responses": [
+        "The feedback report for class {class_id} has been added.",
+        "Feedback has been successfully submitted for class {class_id}.",
+        "The feedback report for {class_name} has been created."
+      ]
+    },
+    {
+      "tag": "view_feedback_report",
+      "patterns": [
+        "Show the feedback report for class {class_id}",
+        "View feedback for class {class_id}",
+        "Display the feedback report for {class_name}",
+        "Get feedback for class {class_id}"
+      ],
+      "responses": [
+        "Here is the feedback report for class {class_id}: {feedback_report}.",
+        "Displaying feedback for class {class_id}.",
+        "The feedback report for {class_name} is: {feedback_report}."
+      ]
+    },
+    {
+      "tag": "update_feedback_report",
+      "patterns": [
+        "Update the feedback report for class {class_id}",
+        "Modify feedback for class {class_id}",
+        "Change feedback report details for {class_name}",
+        "Edit the feedback report for class {class_id}"
+      ],
+      "responses": [
+        "The feedback report for class {class_id} has been updated.",
+        "Feedback for class {class_id} has been successfully modified.",
+        "The feedback report for {class_name} has been changed."
+      ]
+    },
+    {
+      "tag": "delete_feedback_report",
+      "patterns": [
+        "Remove the feedback report for class {class_id}",
+        "Delete feedback for class {class_id}",
+        "Clear feedback report for class {class_id}",
+        "Erase the feedback report for {class_name}"
+      ],
+      "responses": [
+        "The feedback report for class {class_id} has been removed.",
+        "Feedback for class {class_id} has been successfully deleted.",
+        "The feedback report for {class_name} has been cleared."
+      ]
+    },
+    {
+      "tag": "list_feedback_reports",
+      "patterns": [
+        "List all feedback reports for class {class_id}",
+        "Show all feedback for class {class_id}",
+        "Get all feedback reports for {class_name}",
+        "Display feedback reports for class {class_id}"
+      ],
+      "responses": [
+        "Here are all the feedback reports for class {class_id}: {feedback_reports}.",
+        "Fetching the list of all feedback reports for class {class_id}.",
+        "The feedback reports for {class_name} are: {feedback_reports}."
+      ]
+    },
+    {
+      "tag": "add_resource",
+      "patterns": [
+        "Add {resource_type} for class {class_id}",
+        "Assign new {resource_type} for {class_name}",
+        "Create {resource_type} for {subject_name} in class {class_id}",
+        "Set up {resource_type} for class {class_id}"
+      ],
+      "responses": [
+        "{resource_type} has been added for class {class_id} by {teacher_name}.",
+        "Successfully created {resource_type} for {subject_name} in class {class_id}.",
+        "{teacher_name} has assigned new {resource_type} for {class_name}."
+      ]
+    },
+    {
+      "tag": "view_resource",
+      "patterns": [
+        "Show all {resource_type} for class {class_id}",
+        "View {resource_type} assigned to {class_name}",
+        "Display {resource_type} for {subject_name} in class {class_id}",
+        "List {resource_type} for class {class_id}"
+      ],
+      "responses": [
+        "Here are all the {resource_type} for class {class_id}: {resource_list}.",
+        "Displaying {resource_type} assigned to {class_name}.",
+        "The following {resource_type} have been assigned for {subject_name} in class {class_id}: {resource_list}."
+      ]
+    },
+    {
+      "tag": "update_resource",
+      "patterns": [
+        "Update {resource_type} for class {class_id}",
+        "Modify the {resource_type} for {class_name}",
+        "Change {resource_type} details for {subject_name} in class {class_id}",
+        "Edit {resource_type} for class {class_id}"
+      ],
+      "responses": [
+        "{resource_type} for class {class_id} has been updated by {teacher_name}.",
+        "The {resource_type} details for {subject_name} in class {class_id} have been modified.",
+        "{teacher_name} has successfully edited the {resource_type} for {class_name}."
+      ]
+    },
+    {
+      "tag": "delete_resource",
+      "patterns": [
+        "Remove {resource_type} for class {class_id}",
+        "Delete {resource_type} from {class_name}",
+        "Clear {resource_type} for {subject_name} in class {class_id}",
+        "Erase {resource_type} for class {class_id}"
+      ],
+      "responses": [
+        "{resource_type} for class {class_id} has been removed.",
+        "Successfully deleted {resource_type} from {class_name}.",
+        "{teacher_name} has cleared the {resource_type} for {subject_name} in class {class_id}."
+      ]
+    },
+    {
+      "tag": "list_resources",
+      "patterns": [
+        "List all resources for class {class_id}",
+        "Show all assignments, homework, projects, and classwork for {class_name}",
+        "Display all resources for {subject_name} in class {class_id}",
+        "Get all educational resources for class {class_id}"
+      ],
+      "responses": [
+        "Here are all the resources for class {class_id}: {resource_list}.",
+        "Listing all assignments, homework, projects, and classwork for {class_name}.",
+        "The educational resources for {subject_name} in class {class_id} are: {resource_list}."
+      ]
+    },
+    {
+      "tag": "emergency_alert",
+      "patterns": [
+        "Send an emergency alert to everyone",
+        "Broadcast emergency alert",
+        "Notify all about an emergency",
+        "Alert all users about the emergency"
+      ],
+      "responses": [
+        "Emergency alert has been sent to all mentors, students, teachers, and admin.",
+        "All users have been notified about the emergency.",
+        "An emergency alert has been broadcasted to everyone in the system."
+      ]
+    },
+    {
+      "tag": "emergency_alert_by_role",
+      "patterns": [
+        "Send emergency alert to {role}",
+        "Notify {role} about the emergency",
+        "Alert {role} about the emergency",
+        "Send emergency message to {role}"
+      ],
+      "responses": [
+        "Emergency alert has been sent to {role}.",
+        "{role} have been notified about the emergency.",
+        "An emergency alert has been dispatched to {role}."
+      ]
+    },
+    {
+      "tag": "add_meeting_link",
+      "patterns": [
+        "Add a meeting link for class {class_id}",
+        "Set up an online class link for class {class_id}",
+        "Provide a meeting link for class {class_id}",
+        "Enter the meeting URL for class {class_id}"
+      ],
+      "responses": [
+        "The meeting link for class {class_id} has been added. Here is the link: {meeting_link}.",
+        "Meeting link for class {class_id} has been set up successfully.",
+        "The online class link for class {class_id} is now available: {meeting_link}."
+      ]
+    },
+    {
+      "tag": "view_meeting_link",
+      "patterns": [
+        "Show the meeting link for class {class_id}",
+        "Get the online class link for class {class_id}",
+        "Display the meeting URL for class {class_id}",
+        "Retrieve the meeting link for class {class_id}"
+      ],
+      "responses": [
+        "Here is the meeting link for class {class_id}: {meeting_link}.",
+        "Fetching the meeting link for class {class_id}.",
+        "The online class link for class {class_id} is: {meeting_link}."
+      ]
+    },
+    {
+      "tag": "update_meeting_link",
+      "patterns": [
+        "Update the meeting link for class {class_id}",
+        "Change the online class link for class {class_id}",
+        "Modify the meeting URL for class {class_id}",
+        "Edit the meeting link for class {class_id}"
+      ],
+      "responses": [
+        "The meeting link for class {class_id} has been updated. Here is the new link: {meeting_link}.",
+        "The online class link for class {class_id} has been changed.",
+        "The updated meeting link for class {class_id} is now available: {meeting_link}."
+      ]
+    },
+    {
+      "tag": "delete_meeting_link",
+      "patterns": [
+        "Remove the meeting link for class {class_id}",
+        "Delete the online class link for class {class_id}",
+        "Clear the meeting URL for class {class_id}",
+        "Erase the meeting link for class {class_id}"
+      ],
+      "responses": [
+        "The meeting link for class {class_id} has been removed.",
+        "The online class link for class {class_id} has been deleted.",
+        "The meeting link for class {class_id} has been cleared."
+      ]
+    },
+    {
+      "tag": "list_meeting_links",
+      "patterns": [
+        "List all meeting links for classes",
+        "Show all online class links",
+        "Get all meeting URLs",
+        "Display all meeting links"
+      ],
+      "responses": [
+        "Here are the meeting links for all classes: {class_links}.",
+        "Fetching the list of all meeting links.",
+        "The meeting links for all classes are: {class_links}."
+      ]
+    },
+    {
+      "tag": "feed_marks",
+      "patterns": [
+        "Feed marks for class {class_id}",
+        "Enter marks for students in class {class_id}",
+        "Record marks for class {class_id}",
+        "Update marks for class {class_id}"
+      ],
+      "responses": [
+        "Marks for class {class_id} have been fed successfully.",
+        "The marks have been recorded for students in class {class_id}.",
+        "Successfully entered marks for class {class_id}."
+      ]
+    },
+    {
+      "tag": "view_marks",
+      "patterns": [
+        "Show marks for class {class_id}",
+        "Display student marks for class {class_id}",
+        "Get marks for class {class_id}",
+        "View marks of students in class {class_id}"
+      ],
+      "responses": [
+        "Here are the marks for class {class_id}: {marks_list}.",
+        "Displaying student marks for class {class_id}.",
+        "The marks for class {class_id} are: {marks_list}."
+      ]
+    },
+    {
+      "tag": "update_marks",
+      "patterns": [
+        "Update marks for class {class_id}",
+        "Change student marks for class {class_id}",
+        "Modify marks for class {class_id}",
+        "Edit marks of students in class {class_id}"
+      ],
+      "responses": [
+        "Marks for class {class_id} have been updated.",
+        "The student marks for class {class_id} have been changed.",
+        "Successfully modified the marks for class {class_id}."
+      ]
+    },
+    {
+      "tag": "delete_marks",
+      "patterns": [
+        "Remove marks for class {class_id}",
+        "Delete student marks for class {class_id}",
+        "Clear marks for class {class_id}",
+        "Erase marks of students in class {class_id}"
+      ],
+      "responses": [
+        "Marks for class {class_id} have been removed.",
+        "The student marks for class {class_id} have been deleted.",
+        "Successfully cleared the marks for class {class_id}."
+      ]
+    },
+    {
+      "tag": "list_marks",
+      "patterns": [
+        "List all marks for class {class_id}",
+        "Show marks of students in class {class_id}",
+        "Get all student marks for class {class_id}",
+        "Display marks for class {class_id}"
+      ],
+      "responses": [
+        "Here are the marks for all students in class {class_id}: {marks_list}.",
+        "Fetching the list of all marks for class {class_id}.",
+        "The marks for class {class_id} are: {marks_list}."
+      ]
+    },
+    {
+      "tag": "attendance",
+      "patterns": [
+        "Mark attendance for class {class_id}",
+        "Record attendance for class {class_id}",
+        "Update attendance for class {class_id}",
+        "Enter attendance for students in class {class_id}"
+      ],
+      "responses": [
+        "Attendance for class {class_id} has been recorded.",
+        "Successfully marked attendance for students in class {class_id}.",
+        "Attendance has been updated for class {class_id}."
+      ]
+    },
+    {
+      "tag": "view_attendance",
+      "patterns": [
+        "Show attendance for class {class_id}",
+        "Display attendance record for class {class_id}",
+        "Get attendance for students in class {class_id}",
+        "View attendance for class {class_id}"
+      ],
+      "responses": [
+        "Here is the attendance record for class {class_id}: {attendance_list}.",
+        "Displaying attendance for class {class_id}.",
+        "The attendance for students in class {class_id} is: {attendance_list}."
+      ]
+    },
+    {
+      "tag": "update_attendance",
+      "patterns": [
+        "Update attendance for class {class_id}",
+        "Change attendance record for class {class_id}",
+        "Modify attendance for class {class_id}",
+        "Edit attendance for class {class_id}"
+      ],
+      "responses": [
+        "Attendance for class {class_id} has been updated.",
+        "Successfully changed the attendance record for class {class_id}.",
+        "The attendance for class {class_id} has been modified."
+      ]
+    },
+    {
+      "tag": "delete_attendance",
+      "patterns": [
+        "Remove attendance record for class {class_id}",
+        "Delete attendance for class {class_id}",
+        "Clear attendance for students in class {class_id}",
+        "Erase attendance record for class {class_id}"
+      ],
+      "responses": [
+        "Attendance record for class {class_id} has been removed.",
+        "Successfully deleted the attendance for class {class_id}.",
+        "The attendance for class {class_id} has been cleared."
+      ]
+    },
+    {
+      "tag": "list_attendance",
+      "patterns": [
+        "List all attendance records for class {class_id}",
+        "Show attendance of students in class {class_id}",
+        "Get all attendance data for class {class_id}",
+        "Display attendance records for class {class_id}"
+      ],
+      "responses": [
+        "Here are the attendance records for class {class_id}: {attendance_list}.",
+        "Fetching the list of all attendance records for class {class_id}.",
+        "The attendance for class {class_id} is: {attendance_list}."
+      ]
+    }
+    ]
+  }
+  

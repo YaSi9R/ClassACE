@@ -1,0 +1,196 @@
+{
+    "mentor": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "How are you?",
+          "Is anyone there?",
+          "Good day",
+          "What’s up?",
+          "How’s it going?",
+          "Hello there!",
+          "Hey there!",
+          "Hi there",
+          "Hello!"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there! What can I do for you?",
+          "Greetings! How can I help you?",
+          "Hey! How’s it going?",
+          "Hello! What can I assist you with?"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Cya",
+          "I’m leaving",
+          "Talk to you later",
+          "Farewell",
+          "See ya",
+          "Catch you later",
+          "I have to go",
+          "Later"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later! Take care!",
+          "Bye! Feel free to return anytime!",
+          "Farewell! Have a wonderful day!",
+          "Catch you later! Bye for now!"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "creator",
+        "patterns": [
+          "Who created this bot?",
+          "Who made you?",
+          "Who developed you?",
+          "Who is behind this chatbot?",
+          "Who designed you?",
+          "Who made this chatbot?",
+          "Who built you?",
+          "Creator of this bot?",
+          "Who is the father of this bot?"
+        ],
+        "responses": [
+          "This chatbot was developed by Shashank and Shantanu.",
+          "Our chatbot was created by Shashank and Shantanu.",
+          "The chatbot was built by a group of experts in software development named Shashank and Shantanu."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "name",
+        "patterns": [
+          "What’s your name?",
+          "Do you have a name?",
+          "What should I call you?",
+          "What are you called?",
+          "Who are you?",
+          "What is your name?",
+          "What are you?",
+          "Name?",
+          "What’s your name?",
+          "Who am I chatting with?"
+        ],
+        "responses": [
+          "You can call me Chatbot.",
+          "I'm known as Chatbot.",
+          "I am a virtual assistant.",
+          "My name is Chatbot, how can I help you?"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "hours",
+        "patterns": [
+          "What are the school hours?",
+          "When does school start?",
+          "When is school open?",
+          "What are the timings of the school?",
+          "School opening hours?",
+          "What time does school end?",
+          "School schedule",
+          "School timings",
+          "When does school begin?",
+          "When does school close?"
+        ],
+        "responses": [
+          "School is open from 8am to 3pm, Monday to Friday.",
+          "The school operates from 8 AM to 3 PM.",
+          "Our school hours are from 8:00 AM to 3:00 PM."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mentor_schedule",
+        "patterns": [
+          "Show my schedule",
+          "What are my upcoming sessions?",
+          "View my mentoring schedule",
+          "Show schedule for mentoring sessions",
+          "Get my session timetable",
+          "What sessions do I have today?",
+          "List my upcoming sessions",
+          "Display my mentoring calendar",
+          "What is my schedule for this week?",
+          "When is my next mentoring session?",
+          "Tell me about my next session",
+          "How many sessions do I have this month?"
+        ],
+        "responses": [
+          "Here is your mentoring schedule: {schedule_list}.",
+          "Your upcoming sessions are: {session_list}.",
+          "Displaying your mentoring timetable: {timetable}.",
+          "Here’s a list of your upcoming mentoring sessions: {session_list}.",
+          "Your session schedule is as follows: {schedule_list}.",
+          "Your next session is scheduled for: {next_session}.",
+          "You have {session_count} sessions planned for this month."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "submitted_reports",
+        "patterns": [
+          "Show submitted reports",
+          "List all reports submitted by students",
+          "What reports have been submitted?",
+          "Display reports submitted by students",
+          "Get all student reports",
+          "Show me the reports from students",
+          "List student reports",
+          "What reports are there from students?",
+          "View all submitted reports",
+          "Show report submissions",
+          "Which reports have been turned in?",
+          "List of reports submitted by students"
+        ],
+        "responses": [
+          "Here is the list of reports submitted by students: {report_list}.",
+          "Displaying all student reports: {report_list}.",
+          "The reports submitted by students are as follows: {report_list}.",
+          "Here are all the reports submitted by students: {report_list}.",
+          "Listing all student reports: {report_list}.",
+          "The reports turned in by students are: {report_list}."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "real_time_feedback",
+        "patterns": [
+          "Submit feedback for mentor session",
+          "Give feedback on mentor session",
+          "Provide feedback for today's session",
+          "Send feedback for recent mentoring",
+          "How do I give feedback on a session?",
+          "Submit my session feedback",
+          "Rate today's mentor session",
+          "Give real-time feedback for mentor session",
+          "How was the session today?",
+          "Feedback on mentor",
+          "Send feedback on mentoring session"
+        ],
+        "responses": [
+          "Your feedback for the mentor session has been submitted. Thank you!",
+          "Thank you for your feedback on the mentor session.",
+          "Feedback has been recorded for the mentor session.",
+          "We appreciate your input. Your feedback has been sent.",
+          "Your feedback on the recent mentoring session has been received.",
+          "Thanks for sharing your thoughts on the session!",
+          "Your feedback is valuable. It has been successfully submitted."
+        ],
+        "context_set": ""
+      }
+    ]
+  }
+  
