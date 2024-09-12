@@ -26,7 +26,7 @@ export default function Instructor() {
     return (
         <div>
             <div className="space-y-2">
-                <h1 className="text-2xl font-bold text-richblack-5">
+                <h1 className="text-2xl font-bold text-[#807d79]">
                     Hi {user?.firstName} 👋
                 </h1>
                 <p className="font-medium text-richblack-200">

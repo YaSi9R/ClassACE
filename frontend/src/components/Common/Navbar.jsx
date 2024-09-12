@@ -4,7 +4,7 @@ import { BsChevronDown } from "react-icons/bs"
 import { useSelector } from "react-redux"
 import { Link, matchPath, useLocation } from "react-router-dom"
 
-import logo from "../../assets/Logo/Schoollama.png"
+import logo from "../../assets/Logo/classace.png"
 import { NavbarLinks } from "../../data/navbar-links"
 import { ACCOUNT_TYPE } from "../../utils/constants"
 import ProfileDropdown from "../Core/Auth/ProfileDropdown"
@@ -30,8 +30,8 @@ function Navbar() {
   const toggleOpen = () => setOpen(!open);
   return (
     <div
-      className={`flex h-14 items-center justify-center border-b-[1px] border-b-richblack-700  bg-[#241a10]
-         transition-all duration-200`}
+      className={`flex h-14 items-center justify-center border-b-[1px] border-b-richblack-700 bg-custom-gradient
+     transition-all duration-200 top-0 left-0 right-0 z-50`} // Added fixed positioning and z-index
     >
       <div className="flex w-11/12 max-w-maxContent items-center justify-between">
         {/* Logo */}
@@ -40,7 +40,7 @@ function Navbar() {
         </Link>
         {/* Navigation links */}
         <nav className="hidden md:block">
-          <ul className="flex gap-x-6 text-richblack-25">
+          <ul className="flex gap-x-6 text-white">
             {NavbarLinks.map((link, index) => (
               <li key={index}>
 
@@ -49,7 +49,7 @@ function Navbar() {
                   <p
                     className={`${matchRoute(link?.path)
                       ? "text-[#efde44]"
-                      : "text-richblack-25"
+                      : "text-white"
                       }`}
                   >
                     {link.title}
@@ -65,14 +65,14 @@ function Navbar() {
           
           {token === null && (
             <Link to="/login">
-              <button className="rounded-[8px] border border-richblack-700 bg-[#2b2824] px-[12px] py-[8px] text-richblack-100">
+              <button className="rounded-[8px] border border-richblack-700 bg-[#6e45e2] px-[12px] py-[8px] text-white">
                 Log in
               </button>
             </Link>
           )}
           {token === null && (
             <Link to="/signup">
-              <button className="rounded-[8px] border border-richblack-700 bg-[#2b2824] px-[12px] py-[8px] text-richblack-100">
+              <button className="rounded-[8px] border border-richblack-700 bg-[#6e45e2] px-[12px] py-[8px] text-white">
                 Sign up
               </button>
             </Link>
@@ -97,7 +97,7 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="absolute top-14 left-0 right-0 z-40 bg-[#241a10] p-4 md:hidden ">
+        <div className="absolute top-14 left-0 right-0 z-40 bg-[#6e45e2] p-4 md:hidden ">
           <button className="absolute top-4 right-8 z-50" onClick={toggleOpen}>
 
           </button>

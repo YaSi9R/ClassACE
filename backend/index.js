@@ -44,6 +44,16 @@ app.get("/", (req, res) => {
         });
 });
 
+app.get('/ask-api', (req, res) => {
+    const userInput = req.query['user-input']; // Make sure this matches the key in the frontend
+    res.json({
+        response: `You asked: ${userInput}. Here is a bot response!`,
+    });
+});
+
+
+
+
 // Global error handler
 app.use((err, req, res, next) => {
     console.error("Global error handler:", err.stack);

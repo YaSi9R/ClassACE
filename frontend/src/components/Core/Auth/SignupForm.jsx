@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 import { sendOtp } from "../../../services/operations/authAPI"
 import { setSignupData } from "../../../slices/authSlice"
 import { ACCOUNT_TYPE } from "../../../utils/constants"
-import Tab from "../../Common/Tab"
+import Tab from "../Tab"
 
 function SignupForm() {
   const navigate = useNavigate()
@@ -96,7 +96,7 @@ function SignupForm() {
       <form onSubmit={handleOnSubmit} className="flex w-full flex-col gap-y-4">
         <div className="flex gap-x-4">
           <label>
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
               First Name <sup className="text-[#ff3131]">*</sup>
             </p>
             <input
@@ -106,11 +106,11 @@ function SignupForm() {
               value={firstName}
               onChange={handleOnChange}
               placeholder="Enter first name"
-              className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+              className="form-style w-full h-12 bg-[#8b67f1] rounded-[10px] pl-2 text-[#fff]"
               />
           </label>
           <label>
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
               Last Name <sup className="text-[#ff3131]">*</sup>
             </p>
             <input
@@ -120,12 +120,12 @@ function SignupForm() {
               value={lastName}
               onChange={handleOnChange}
               placeholder="Enter last name"
-              className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+              className="form-style w-full h-12 bg-[#8b67f1] rounded-[10px] pl-2 text-[#fff]"
               />
           </label>
         </div>
         <label className="w-full">
-          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
             Email Address <sup className="text-[#ff3131]">*</sup>
           </p>
           <input
@@ -135,12 +135,12 @@ function SignupForm() {
             value={email}
             onChange={handleOnChange}
             placeholder="Enter email address"
-            className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+            className="form-style w-full h-12 bg-[#8b67f1] rounded-[10px] pl-2 text-[#fff]"
             />
         </label>
         <div className="flex gap-x-4">
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
               Create Password <sup className="text-[#ff3131]">*</sup>
             </p>
             <input
@@ -150,7 +150,7 @@ function SignupForm() {
               value={password}
               onChange={handleOnChange}
               placeholder="Enter Password"
-              className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+              className="form-style w-full h-12 bg-[#8b67f1] rounded-[10px] pl-2 text-[#fff]"
               />
             <span
               onClick={() => setShowPassword((prev) => !prev)}
@@ -164,7 +164,7 @@ function SignupForm() {
             </span>
           </label>
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
               Confirm Password <sup className="text-[#ff3131]">*</sup>
             </p>
             <input
@@ -174,7 +174,7 @@ function SignupForm() {
               value={confirmPassword}
               onChange={handleOnChange}
               placeholder="Confirm Password"
-              className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+              className="form-style w-full h-12 bg-[#8b67f1] rounded-[10px] pl-2 text-[#fff]"
               />
             <span
               onClick={() => setShowConfirmPassword((prev) => !prev)}
@@ -190,7 +190,7 @@ function SignupForm() {
         </div>
         <button
           type="submit"
-          className="mt-6 rounded-[8px] bg-[#efde44] py-[8px] px-[12px] font-medium text-richblack-900"
+          className="mt-6 rounded-[8px] bg-[#f8961d] py-[8px] px-[12px] font-medium text-richblack-900"
         >
           Create Account
         </button>

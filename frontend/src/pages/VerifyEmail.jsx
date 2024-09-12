@@ -54,7 +54,7 @@ function VerifyEmail() {
         </div>
       ) : (
         <div className="max-w-[500px] p-4 lg:p-8">
-          <h1 className="text-richblack-5 font-semibold text-[1.875rem] leading-[2.375rem]">
+          <h1 className="text-[#807d79] font-semibold text-[1.875rem] leading-[2.375rem]">
             Verify Email
           </h1>
           <p className="text-[1.125rem] leading-[1.625rem] my-4 text-richblack-100">
@@ -72,7 +72,7 @@ function VerifyEmail() {
                   style={{
                     boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
                   }}
-                  className="w-[48px] lg:w-[60px] border-0 bg-[#241a10] rounded-[0.5rem] text-richblack-5 aspect-square text-center focus:border-0 focus:outline-2 focus:outline-yellow-50"
+                  className="w-[48px] lg:w-[60px] border-0 bg-[#8b67f1] rounded-[0.5rem] text-[#807d79] aspect-square text-center focus:border-0 focus:outline-2 focus:outline-yellow-50"
                 />
               )}
               containerStyle={{
@@ -82,14 +82,14 @@ function VerifyEmail() {
             />
             <button
               type="submit"
-              className="w-full bg-[#efde44] py-[12px] px-[12px] rounded-[8px] mt-6 font-medium text-richblack-900"
+              className="w-full bg-[#f8961d] py-[12px] px-[12px] rounded-[8px] mt-6 font-medium text-richblack-900"
             >
               Verify Email
             </button>
           </form>
           <div className="mt-6 flex items-center justify-between">
             <Link to="/signup">
-              <p className="text-richblack-5 flex items-center gap-x-2">
+              <p className="text-[#807d79] flex items-center gap-x-2">
                 <BiArrowBack /> Back To Signup
               </p>
             </Link>

@@ -22,6 +22,13 @@ import Navbar from "./components/Common/Navbar"
 import OpenRoute from "./components/Core/Auth/OpenRoute"
 import PrivateRoute from "./components/Core/Auth/PrivateRoute"
 import MyProfile from "./components/Core/Dashboard/MyProfile"
+import MyTeachers from "./components/Core/MyTeachers"
+import Chatbot from "./components/Core/Chatbot"
+import Result from "./components/Core/Result"
+// import attendance from "./components/Core/attendance"
+import Attendance from "./components/Core/Attendance"
+import Mentor from "./components/Core/Mentor"
+
 import Dashboard from "./pages/Dashboard"
 import Instructor from "./components/Core/Dashboard/Instructor/Instructor"
 
@@ -39,7 +46,7 @@ function App() {
   }, [])
 
   return (
-    <div className="flex min-h-screen w-screen flex-col bg-[#40362d] font-inter">
+    <div className="flex min-h-screen w-screen flex-col bg-[#ebebeb] font-inter">
       <Navbar />
       
 
@@ -84,6 +91,14 @@ function App() {
         >
           {/* Route for all users */}
           <Route path="dashboard/my-profile" element={<MyProfile />} />
+          <Route path="dashboard/chatbot" element={<Chatbot />} />
+          <Route path="dashboard/attendance" element={<Attendance />} />
+          <Route path="dashboard/mentor" element={<Mentor />} />
+          <Route path="dashboard/result" element={<Result />} />
+          <Route path="dashboard/teachers" element={<MyTeachers />} />
+
+
+
 
           {/* Route only for Teacher */}
           {user?.accountType === ACCOUNT_TYPE.INSTRUCTOR && (

@@ -1,0 +1,69 @@
+.my-teachers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.teacher-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.teacher-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.teacher-info {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.teacher-name {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.teacher-subject {
+    color: #555;
+    margin: 0;
+}
+
+.chat-button {
+    background: #6e45e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.chat-button:hover {
+    background: #88d3ce;
+    transform: scale(1.1);
+}
+
+.chat-icon {
+    font-size: 1.5em;
+}

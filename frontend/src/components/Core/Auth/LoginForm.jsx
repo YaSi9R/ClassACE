@@ -35,7 +35,7 @@ function LoginForm() {
       className="mt-6 flex w-full flex-col gap-y-4"
     >
       <label className="w-full">
-        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
           Email Address <sup className="text-[#ff3131]">*</sup>
         </p>
         <input
@@ -45,11 +45,11 @@ function LoginForm() {
           value={email}
           onChange={handleOnChange}
           placeholder="Enter email address"
-          className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+          className="form-style w-full h-12 bg-[#8b67f1] rounded-[10px] pl-2 text-[#fff]"
         />
       </label>
       <label className="relative">
-        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#807d79]">
           Password <sup className="text-[#ff3131]">*</sup>
         </p>
         <input
@@ -59,7 +59,7 @@ function LoginForm() {
           value={password}
           onChange={handleOnChange}
           placeholder="Enter Password"
-          className="form-style w-full h-12 bg-[#241a10] rounded-[10px] pl-2 text-[#fff]"
+          className="form-style w-full h-12 bg-[#8b67f1]  rounded-[10px] pl-2 text-[#fff]"
         />
         <span
           onClick={() => setShowPassword((prev) => !prev)}
@@ -79,7 +79,7 @@ function LoginForm() {
       </label>
       <button
         type="submit"
-        className="mt-6 rounded-[8px] bg-[#efde44] py-[8px] px-[12px] font-medium text-richblack-900"
+        className="mt-6 rounded-[8px] bg-[#f8961d] py-[8px] px-[12px] font-medium text-richblack-900"
       >
         Sign In
       </button>

@@ -15,13 +15,13 @@ function Template({ title, description1, description2, image, formType }) {
       ) : (
         <div className="mx-auto flex w-11/12 max-w-maxContent flex-col-reverse justify-between gap-y-12 py-12 md:flex-row md:gap-y-0 md:gap-x-12">
           <div className="mx-auto w-11/12 max-w-[450px] md:mx-0">
-            <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-richblack-5">
+            <h1 className="text-[2.225rem] font-semibold leading-[2.375rem] text-[#6e45e2]">
               {title}
             </h1>
             <p className="mt-4 text-[1.125rem] leading-[1.625rem]">
-              <span className="text-richblack-100">{description1}</span>{" "}
+              <span className="text-[#807d79]">{description1}</span>{" "}
               <br />
-              <span className="font-edu-sa font-bold italic text-[#efde44]">
+              <span className="font-edu-sa font-bold italic text-[#f8961d]">
                 {description2}
               </span>
             </p>

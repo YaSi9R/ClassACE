@@ -27,6 +27,9 @@ module.exports = {
       }
     },
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(135deg, #6e45e2, #88d3ce)',
+      },
       maxWidth: {
         maxContent: "1260px",
         maxContentTab: "650px"

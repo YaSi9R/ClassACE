@@ -20,7 +20,7 @@ export default function Sidebar() {
 
   if (profileLoading || authLoading) {
     return (
-      <div className="grid h-[calc(100vh-3.5rem)] min-w-[220px] items-center border-r-[1px] border-r-richblack-700 bg-[#241a10]">
+      <div className="grid h-[calc(100vh-3.5rem)] min-w-[220px] items-center border-r-[1px] border-r-richblack-700 bg-[#8b67f1]">
         <div className="spinner"></div>
       </div>
     );
@@ -34,7 +34,7 @@ export default function Sidebar() {
   return (
     <>
       {isSidebarVisible && ( // Conditionally render the sidebar
-        <div className="flex h-[calc(100vh-3.5rem)] min-w-[220px] flex-col border-r-[1px] border-r-richblack-700 bg-[#241a10] py-10">
+        <div className="flex h-[calc(100vh-3.5rem)] min-w-[220px] flex-col border-r-[1px] border-r-richblack-700 bg-[#8b67f1] py-10">
           <div className="flex flex-col">
             {sidebarLinks.map((link) => {
               if (link.type && user?.accountType !== link.type) return null;
