@@ -1,3 +1,0 @@
-0 Hello
-1 OK
-2 Yes
